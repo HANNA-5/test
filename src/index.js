@@ -79,6 +79,6 @@ function showPosition(position){
    let button=document.querySelector("button");
    button.addEventListener("clik",getCurrentPosition);
   
-   console(showPosition)
+   console.log(position)
   
   
