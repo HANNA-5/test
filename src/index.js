@@ -75,10 +75,11 @@ function showPosition(position){
        h2.innerHTML=`Your Latitude is ${lat} and your lonqitude is ${lot}`;
          }
   
-   function getCurrentPosition(){ navigator.geolocation.getCurrentPosition(showPosition);}
+   function getCurrentPosition(){ 
+    navigator.geolocation.getCurrentPosition(showPosition);
+}
    let button=document.querySelector("button");
-   button.addEventListener("clik",getCurrentPosition);
+   button.addEventListener("click",getCurrentPosition);
   
-   console.log(position)
   
   
