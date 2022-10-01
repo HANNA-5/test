@@ -63,11 +63,14 @@ function showWeather(event) {
 let cityForm = document.querySelector("#city-form");
 cityForm.addEventListener("submit", showWeather);
 
+
+
 function showPosition(position){
     let apiKey = "445905dadb3d2b0c6f1b916c9d0e3860";
+    lat=position.coords.latitude;
+    lon=position.coords.longitude;
      let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`;
-     lat=position.coords.latitude;
-     lon=position.coords.longitude;
+     
      let h2=document.querySelector("h2");
        h2.innerHTML=`Your Latitude is ${lat} and your lonqitude is ${lot}`;
          }
@@ -76,5 +79,6 @@ function showPosition(position){
    let button=document.querySelector("button");
    button.addEventListener("clik",getCurrentPosition);
   
+   console(showPosition)
   
   
