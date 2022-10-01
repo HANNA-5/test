@@ -54,7 +54,7 @@ function showWeather(event) {
   event.preventDefault();
   let cityIn = document.querySelector("#city-input").value;
   document.querySelector("h3").innerHTML = cityIn.toUpperCase();
-  let apiKey = "8402ccd9e55983fce71eeeaa1d2bd1fc";
+  let apiKey = "aa09763d916df0424c840d55bfc2d2c9";
   let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityIn}&appid=${apiKey}&&units=metric`;
 
   axios.get(url).then(weather);
@@ -63,7 +63,7 @@ let cityForm = document.querySelector("#city-form");
 cityForm.addEventListener("submit", showWeather);
 
 function showPosition(position){
-    let apiKey = "8402ccd9e55983fce71eeeaa1d2bd1fc";
+    let apiKey = "aa09763d916df0424c840d55bfc2d2c9";
      let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`;
      lat=position.coords.latitude;
      lon=position.coords.longitude;
