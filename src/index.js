@@ -1,4 +1,4 @@
-console.log("gh");let now = new Date();
+//console.log("gh");let now = new Date();
 let Day = [
   "Sunday",
   "Monday",
